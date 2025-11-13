@@ -10,5 +10,4 @@ let result = counter(1); // result is function here
 console.log(result());
 console.log(result());
 
-// Closure Concept
 
