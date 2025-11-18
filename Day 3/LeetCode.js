@@ -1,4 +1,4 @@
-// LeetCode JS - "Sleep" (#2621)
+ // LeetCode JS - "Sleep" (#2621)
 
 let millis = 2000;
 
