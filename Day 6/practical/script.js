@@ -5,21 +5,21 @@ let inputBox = document.querySelector("#inputBox");
 let btn = document.querySelector("#sumBtn");
 let result = document.querySelector("#result");
 
-// new array to store the number and sum them by using map
-
+var arr = [];
 
 inputBox.addEventListener("input", (e) => {
-    var arr = [];
-    arr = e.target.value.split(",");
-    
-    let sum = 0;
-    arr.map((num) => {
-        sum = sum + Number(num);
+    arr = e.target.value.split(',');
+    console.log(arr)
+});
+
+btn.addEventListener('click', (e) => {
+    let newArr = arr.map((num) => {
+       return Number(num);
+    });
+
+    let total = newArr.reduce((prev,curr) => {
+        return prev + curr;
     })
 
-    result.innerText = sum;
-})
-
-
-
-
+    result.innerText = total;
+});
