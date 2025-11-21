@@ -5,7 +5,7 @@ let inputBox = document.querySelector("#inputBox");
 let toggleBtn = document.querySelector("#toggleBtn");
 
 toggleBtn.addEventListener('click', (e) => {
-    console.log("clicked on show");
+
     let value = inputBox.type;
     if(value == "password"){
         inputBox.type = "text";
